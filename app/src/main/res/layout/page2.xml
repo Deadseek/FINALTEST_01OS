@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tw1"
+            android:layout_width="153dp"
+            android:layout_height="67dp"
+            android:layout_marginEnd="115dp"
+            android:layout_marginLeft="116dp"
+            android:layout_marginRight="115dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="52dp"
+            android:text="Counter"
+            android:textAlignment="center"
+            android:textSize="38dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/tw2"
+            android:layout_width="150dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="117dp"
+            android:layout_marginLeft="117dp"
+            android:layout_marginRight="117dp"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="31dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="38dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tw1" />
+
+    <Button
+            android:id="@+id/bttoast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="172dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:onClick="MyToast"
+            android:text="Toast"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+            android:id="@+id/btcount"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="43dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginStart="44dp"
+            android:onClick="MyCount"
+            android:text="Count"
+            app:layout_constraintBottom_toTopOf="@+id/btreset"
+            app:layout_constraintEnd_toStartOf="@+id/btrandom"
+            app:layout_constraintStart_toEndOf="@+id/bttoast" />
+
+    <Button
+            android:id="@+id/btrandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="172dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:onClick="MyRandom"
+            android:text="Random"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+            android:id="@+id/btreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="81dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginRight="148dp"
+            android:layout_marginStart="148dp"
+            android:onClick="Myreset"
+            android:text="Reset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
